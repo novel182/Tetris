@@ -1,0 +1,5 @@
+C:\Users\sapko\Desktop\WindowsAppDevelopment\Tetris\obj\Debug\Tetris.csprojAssemblyReference.cache
+C:\Users\sapko\Desktop\WindowsAppDevelopment\Tetris\obj\Debug\MainWindow.g.cs
+C:\Users\sapko\Desktop\WindowsAppDevelopment\Tetris\obj\Debug\App.g.cs
+C:\Users\sapko\Desktop\WindowsAppDevelopment\Tetris\obj\Debug\Tetris_MarkupCompile.cache
+C:\Users\sapko\Desktop\WindowsAppDevelopment\Tetris\obj\Debug\Tetris_MarkupCompile.lref
