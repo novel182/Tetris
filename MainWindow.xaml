@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tetris"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="500" Width="400"
+        KeyDown="HandleKeyPress">
+  <Grid>
+
+    <Border Grid.Column ="0" Background="#212121"/>
+    <Border Grid.Column ="1" Background="#DCDCDC">
+      <Label/>
+    </Border>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="4.5*"/>
+      <ColumnDefinition Width="1.5*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+
+      <RowDefinition Height="4*"/>
+    </Grid.RowDefinitions>
+  </Grid>
 </Window>

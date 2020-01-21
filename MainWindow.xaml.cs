@@ -15,7 +15,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MySql.Data;
 using MySql.Data.MySqlClient;
-using Tetris.Models;
 
 
 namespace Tetris
@@ -28,19 +27,45 @@ namespace Tetris
         public MainWindow()
         {
             InitializeComponent();
-
-
-        }
-        static void Main(string[] args)    
-        {
-            MySqlDb score = new MySqlDb("db4free.net", "tetrisgame", "tetris2020", "tetris2020");
+             MySqlDb score = new MySqlDb("db4free.net", "tetrisgame", "tetris2020", "tetris2020");
             score.OpenConnection();
-            score playerscore = score.AddScore("Sabin", 5);
-
-
+            Highscore playerscore = score.AddScore("Sabin", 5);
 
 
         }
 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void HandleKeyPress(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Up)
+            {
+                //change block state
+            }
+            else if(e.Key == Key.Down)
+            {
+
+            }
+            else if (e.Key == Key.Left)
+            {
+
+            }
+            else if (e.Key == Key.Right)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
     }
 }
