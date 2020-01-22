@@ -24,13 +24,17 @@ namespace Tetris
     /// </summary>
     public partial class MainWindow : Window
     {
+        GameController gameController;
+
         public MainWindow()
         {
             InitializeComponent();
-             MySqlDb score = new MySqlDb("db4free.net", "tetrisgame", "tetris2020", "tetris2020");
-            score.OpenConnection();
-            Highscore playerscore = score.AddScore("Sabin", 5);
+            // MySqlDb score = new MySqlDb("db4free.net", "tetrisgame", "tetris2020", "tetris2020");
+            //score.OpenConnection();
+            //Highscore playerscore = score.AddScore("Sabin", 5);
 
+
+            gameController = new GameController();
 
         }
 
@@ -52,15 +56,15 @@ namespace Tetris
             }
             else if(e.Key == Key.Down)
             {
-
+                gameController.HandleDownArrowKey();
             }
             else if (e.Key == Key.Left)
             {
-
+                gameController.HandleLeftArrowKey();
             }
             else if (e.Key == Key.Right)
             {
-
+                gameController.HandleRightArrowKey();
             }
             else
             {
